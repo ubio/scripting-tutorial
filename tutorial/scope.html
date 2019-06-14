@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/input.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Basic scope</h1>
+                <p>Copy the text below in the input field and click "submit" to continue</p>
+            </br>
+                <p class="textToCopy">0.8156531</p>
+            </div>
+            
+            <div id="buttonsContainer">
+                <div class="backButton">
+                    <button class="button button--secondary" onclick="window.history.back()">Back</button>
+                </div>
+                <div id="inputField">                         
+                    <form action="ifelse.html" id="bla">
+                        <input type="text" name="inputText" required pattern="0.8156531">
+                    </form>
+                </div>
+                <div>
+                    <button class="button--primary button--primary:visited" type="submit" name="blaSubmit" form="bla">Submit</button>
+                </div>   
+            </div>               
+        </div>
+    </body>
+</html>
