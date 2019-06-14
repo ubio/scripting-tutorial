@@ -1,0 +1,21 @@
+#mainContainer {
+    text-align: center;
+    padding-top: 10%;
+    max-width: 35%;
+    margin: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size:  250%;
+}
+p {
+    font-size: 180%;
+}
+#buttonsContainer {
+    display: flex;
+    padding-top: 10%;
+    max-width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+
