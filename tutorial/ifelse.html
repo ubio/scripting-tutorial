@@ -9,23 +9,25 @@
     <body>
         <div id="mainContainer">
             <div class="textContainer">
-                <h1>Basic scope</h1>
-                <p>Copy the text below in the input field and click "submit" to continue</p>
-            </br>
-                <p class="textToCopy">0.8156531</p>
+                <h1>If Else</h1>
+                <p>Tick the unticked checkboxes and click "continue" button</p>
             </div>
             
             <div id="buttonsContainer">
                 <div class="backButton">
                     <button class="button button--secondary" onclick="window.history.back()">Back</button>
                 </div>
-                <div id="inputField">                         
-                    <form action="ifelse.html" id="bla">
-                        <input type="text" name="inputText" required pattern="0.8156531">
-                    </form>
-                </div>
+                <div id="checkBoxContainer">
+                    <form action="iterator.html" id="checkboxes">
+                        <input type="checkbox" required>
+                        <input type="checkbox" required checked>
+                        <input type="checkbox" required>
+                        <input type="checkbox" required>
+                        <input type="checkbox" required checked>
+                        <input type="checkbox"required>
+                    </div>
                 <div class="submitButton">
-                    <button class="button--primary button--primary:visited" type="submit" name="blaSubmit" form="bla">Submit</button>
+                    <button class="button--primary button--primary:visited" type="submit" name="blaSubmit" form="checkboxes">Submit</button>
                 </div>   
             </div>               
         </div>
