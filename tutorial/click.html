@@ -1,11 +1,26 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Click</title>
         <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/click.css">
+
     </head>
     <body>
-        <h1><strong>Click</strong></h1>
-        <p>In this context, record a click on the following button to continue: <a href="/scripting-tutorial/tutorial/input.html" class="button button--primary">Submit</a></p>
-        <button class="button button--secondary" onclick="window.history.back()">Back</button>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Click</h1>
+                <p>In this context, record a click on Continue</p> 
+            </div>
+            <div id="buttonsContainer">
+                <div class="backButton">
+                    <button class="button button--secondary padding-space" onclick="window.history.back()">Back</button>
+                </div>
+                <div class="continueButton">
+                    <a href="/scripting-tutorial/tutorial/input.html" class="button button--primary padding-space">Continue</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

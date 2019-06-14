@@ -1,0 +1,29 @@
+#mainContainer {
+    text-align: center;
+    padding-top: 200px;
+    width: 400px;
+    margin: auto;
+}
+h1 {
+    font-weight: bold;
+}
+p {
+    font-size: 20px;
+}
+#buttonsContainer {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+.backButton {
+    display: flex;
+    width: 150px;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+.continueButton {
+    display: flex;
+    width: 150px;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
