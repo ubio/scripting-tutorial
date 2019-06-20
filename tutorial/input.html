@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/input.css">
+        <script src="input.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Input</h1>
+                <p>Type "bla" in the input field, then click "submit" button to continue:</p> 
+            </div>
+            <div id=midContainer>
+                <div id="inputField">                         
+                    <form action="scope.html" id="bla">
+                        <input id="inputFormField" type="text" name="inputText" required pattern="bla">
+                    </form>
+                </br>
+                    <div class="errorMessage badge badge--red--outline">Error: Please input requested text</div>
+                    </div>
+                </div>
+                <div id="buttonsContainer">
+                    <div class="backButtonContainer">
+                        <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+                    </div>
+                    <div class="emptySpacer"></div>
+                    <div class="submitButton">
+                        <button class="submitButton button--primary button--primary:visited" type="submit" name="blaSubmit" form="bla">Submit</button>
+                    </div>   
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>
