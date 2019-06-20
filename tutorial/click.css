@@ -1,7 +1,7 @@
 #mainContainer {
+    width: 400px;
     text-align: center;
     padding-top: 10%;
-    max-width: 35%;
     margin: auto;
 }
 h1 {
@@ -10,11 +10,18 @@ h1 {
 }
 p {
     font-size: 180%;
+    text-align: justify;
+    text-align-last: center;
 }
 #buttonsContainer {
     display: flex;
-    padding-top: 10%;
-    max-width: 70%;
-    justify-content: space-between;
     margin: auto;
+    padding-top: 5%;
+}
+.emptySpacer {
+    width: 100%;
+}
+.backButton {
+    width: 135%;
+    justify-content: center;
 }

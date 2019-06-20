@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding-top: 15%;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-size: 100%;
+    color: #0873a1;
+    font-weight: bold;
+    padding-top: 5%;
+}
+a:hover {
+    text-decoration: none;
+    font-size: 130%;
+    color: #8ce0ff;
+    font-weight: bold;
+    padding-top: 5%;
+}
+h1 {
+    font-weight: 500;
+}
