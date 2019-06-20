@@ -1,0 +1,55 @@
+#mainContainer {
+    text-align: center;
+    padding-top: 10%;
+    width: 400px;
+    margin: auto;
+}
+.textContainer p {
+    text-align: justify;
+    text-align-last: center;
+}
+p {
+    font-size: 180%;
+}
+h1 {
+    font-weight: bold;
+    font-size:  250%;
+}
+#midContainer {
+    padding-top: 5%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+#textToCopyContainer {
+    flex: 50%;
+    text-align: left;
+}
+#inputField {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+    justify-items: center;
+    height: 100%;
+}
+#buttonsContainer {
+    display: flex;
+    padding-top: 2%;
+    width: 400px;
+    margin: auto;
+}
+input[type=text] {
+    width: 100%;
+}
+.errorMessage {
+    display: none;
+}
+.emptySpacer {
+    width: 100%;
+}
+.backButton {
+    width: 135%;
+    justify-content: center;
+}

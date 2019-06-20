@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/scope.css">
+        <script src="scope.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Basic scope</h1>
+                <p>Copy the text from left in the input field and click "submit" to continue</p>
+            </div>
+            <div id="midContainer">
+                <div class="row">
+                    <div id=textToCopyContainer>
+                        <p class="textToCopy"></p>
+                    </div>
+                    <div id="inputField">
+                        <form action="ifelse.html" id="randomNumber">
+                            <input class="inputFormField" type="text" name="inputText" required pattern="">
+                        </form>
+                    </div>
+                </div>
+                <div class="errorMessage badge badge--red--outline">Error: Please input requested text</div>
+            </div>
+        </div>
+        <div id="buttonsContainer">
+            <div class="backButtonContainer">
+                <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+            </div>
+            <div class="emptySpacer"></div>
+            <div class="submitButton">
+                <button class="button--primary button--primary:visited" type="submit" name="blaSubmit" form="randomNumber">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
