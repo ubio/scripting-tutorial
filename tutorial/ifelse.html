@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scripting Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/ifelse.css">
+        <script src="ifelse.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>If Else</h1>
+                <p>Tick the unticked checkboxes and click "continue" button</p>
+            </div>
+            <div id="checkBoxContainer">
+                    <form action="iterator.html" id="checkboxes">
+                        <input class="checkBox" type="checkBox" required>
+                        <input class="checkBox" type="checkBox" required>
+                        <input class="checkBox" type="checkBox" required>
+                    </form>
+                </br>
+                    <div class="errorMessage badge badge--red--outline">Error: Please tick all empty checkboxes</div>
+            </div>
+            <div id="buttonsContainer">
+                <div class="backButtonContainer">
+                    <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+                </div>
+                <div class="emptySpacer"></div>
+                <div class="submitButtonContainer">
+                    <button class="submitButton button--primary button--primary:visited" type="submit" name="blaSubmit" form="checkboxes">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
