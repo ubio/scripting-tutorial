@@ -1,9 +1,7 @@
 function randomCheckboxesNumber() {
    const randomNumber = Math.ceil(Math.random() * (8 - 4) + 4);
-   console.log(randomNumber);
    for (i = 0; i < randomNumber; ++i) {
-    console.log(randomNumber);
-    document.querySelector('#checkBoxes').innerHTML += '<input class="checkBox" type="checkBox" required>';
+       document.querySelector('#checkBoxes').innerHTML += '<input class="checkBox" type="checkBox" required>';
     }
 }
 randomCheckboxesNumber();
