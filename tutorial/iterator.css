@@ -1,0 +1,31 @@
+#mainContainer {
+    text-align: center;
+    padding-top: 10%;
+    width: 450px;
+    margin: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size:  250%;
+}
+p {
+    font-size: 180%;
+}
+#buttonsContainer {
+    display: flex;
+    padding-top: 5%;
+    margin: auto;
+}
+#checkBoxContainer {
+    padding-top: 5%;
+}
+.errorMessage {
+    display: none;
+}
+.emptySpacer {
+    width: 100%;
+}
+.backButton {
+    width: 135%;
+    justify-content: center;
+}
