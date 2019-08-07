@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scripting Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/iterating-in-scope.css">
+        <script src="iterating-in-scope.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Iterating in scope</h1>
+                <p>Copy the text on the left to its correspondent input and click "submit" button</p>
+            </div>
+            <div id="midContainer">
+                <form action="do-until-constant.html" id="taskRows"></form>
+            </div>
+            <div id="buttonsContainer">
+                <div class="backButtonContainer">
+                    <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+                </div>
+                <div class="emptySpacer"></div>
+                <div class="submitButtonContainer">
+                    <button class="submitButton button--primary button--primary:visited" type="submit" name="submitButton" form="taskRows">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
