@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scripting Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+        <link rel="stylesheet" type="text/css" href="/scripting-tutorial/tutorial/do-until-random.css">
+        <script src="do-until-random.js" defer></script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Do until random</h1>
+                <p id="taskMessage"></p>
+            </div>
+            <div id="midContainer">
+                <div id="valueContainer">
+                    <div><button class="button--primary button--primary" id="decreaseValue" class="valueButton">-</button></div>
+                    <div id="submitValue">7</div>
+                    <div><button class="button--primary button--primary" id="increaseValue" class="valueButton">+</button></div>
+                </div>
+                <div class="errorMessage badge badge--red--outline">Error: Adjust value to match requested</div>
+            </div>
+            <div id="buttonsContainer">
+                <div class="backButtonContainer">
+                    <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+                </div>
+                <div class="emptySpacer"></div>
+                <div class="submitButtonContainer">
+                    <button id="submit" class="submitButton button--primary button--primary:visited" type="submit" name="submit" form="taskRows">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
