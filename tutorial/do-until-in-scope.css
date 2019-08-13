@@ -1,0 +1,80 @@
+#main-container {
+    text-align: center;
+    padding-top: 10%;
+    width: 450px;
+    margin: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size:  250%;
+}
+p {
+    font-size: 180%;
+}
+#mid-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    padding-top: 5%;
+}
+.task-row {
+
+    height: 5em;
+}
+#value-container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.value-element {
+    flex: 1;
+}
+#arrow-container{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 6em;
+    height: 40px;
+    line-height: 20px;
+}
+span {
+    font-size: 6em;
+    height: 20px;
+    line-height: 20px;
+
+}
+#buttons-container {
+    display: flex;
+    padding-top: 5%;
+    margin: auto;
+}
+.empty-spacer {
+    width: 100%;
+}
+.back-button {
+    width: 135%;
+    justify-content: center;
+}
+.submit-value, .input-value {
+    flex: 1.3;
+    font-size: 2.7em;
+    font-weight: 800;
+    background-color: white;
+    color:red;
+    text-align: center;
+    line-height: 35px;
+}
+.input-value {
+    color: black;
+}
+.match-error-message {
+    justify-content: center;
+    display: none;
+}
+.increase-value, .decrease-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: normal;
+}
