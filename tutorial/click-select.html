@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click</title>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@ubio/css@2.0.9/index.css">
+
+        <style>
+            #mainContainer {
+                text-align: center;
+                padding-top: 10%;
+                width: 400px;
+                margin: auto;
+            }
+            .textContainer p {
+                text-align: justify;
+                text-align-last: center;
+            }
+            h1 {
+                font-weight: bold;
+                font-size:  200%;
+            }
+            #midContainer {
+                padding-top: 5%;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+            }
+            #buttonsContainer {
+                display: flex;
+                padding-top: 2%;
+                width: 400px;
+                margin: auto;
+            }
+            .input {
+                display: block;
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            .errorMessage {
+                display: none;
+            }
+            .emptySpacer {
+                width: 100%;
+            }
+            .backButton {
+                width: 135%;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div class="textContainer">
+                <h1>Select "Garibaldi" from the menu</h1>
+            </div>
+            <div id="midContainer">
+                <div>
+                    <form
+                        action="ifelse.html"
+                        id="clickSelect"
+                        class="row">
+                        <select class="input input--large">
+                            <option value="">Please select an option</option>
+                            <optgroup label="Set 1">
+                                <option value="1">Bourbon</option>
+                                <option value="2">Custard cream</option>
+                                <option value="3">Digestive</option>
+                            </optgroup>
+                            <optgroup label="Set 2">
+                                <option value="4">Chocolate hobnob</option>
+                                <option value="5">Garibaldi</option>
+                                <option value="6">Brandy snap</option>
+                            </optgroup>
+                        </select>
+                    </form>
+                    </div>
+                </div>
+                <div class="errorMessage badge badge--red--outline">
+                    Error: Please select the "Garibaldi" option
+                </div>
+            </div>
+        </div>
+        <div id="buttonsContainer">
+            <div class="backButtonContainer">
+                <button class="backButton button button--secondary" onclick="window.history.back()">Back</button>
+            </div>
+            <div class="emptySpacer"></div>
+            <div class="submitButton">
+                <button class="button--primary button--primary:visited" type="submit" name="blaSubmit" form="clickSelect">Submit</button>
+            </div>
+        </div>
+
+        <script>
+            var select = document.querySelector('select');
+            var errorMsg = document.querySelector('.errorMessage');
+            var submitBtn = document.querySelector('[name=blaSubmit]');
+
+            select.addEventListener('change', function(e) {
+                if (e.target.value === "5") {
+                    errorMsg.style.display = "none";
+                } else {
+                    errorMsg.style.display = "block";
+                }
+            });
+
+            submitBtn.addEventListener('click', function(e) {
+                if (select.value !== "5") {
+                    e.preventDefault();
+                    errorMsg.style.display = "block";
+                }
+            });
+        </script>
+    </body>
+</html>
